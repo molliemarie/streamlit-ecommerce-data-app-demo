@@ -12,7 +12,7 @@ def load_and_clean_data(file_path):
     data['TotalSales'] = data['Quantity'] * data['UnitPrice']
     return data[data['Quantity'] > 0]
 
-data = load_and_clean_data('data/data.csv')
+data = load_and_clean_data('https://drive.google.com/uc?export=download&id=1p9UhuXH6sCp64lwz1h3MSikUxeXroM6I')
 selected_country = "All"
 
 title = st.sidebar.title("E-commerce Data Analysis")
